@@ -10,7 +10,7 @@ interface ICidade {
 type TypedRequestBody<T> = Request<{}, {}, T>;
 
 const bodyValidation: yup.Schema<ICidade> = yup.object().shape({
-  name: yup.string().required().min(3),
+  name: yup.string().required().min(2),
   state: yup.string().required(),
 });
 
